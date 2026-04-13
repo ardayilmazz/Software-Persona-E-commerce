@@ -1,17 +1,36 @@
-# flutter_application_1
+# Flutter Ürün Uygulaması
 
-A new Flutter project.
+Ürünleri bir API üzerinden listeleyen, detay sayfası ve sepet ekranı sunan basit bir **Flutter** mobil uygulaması.
 
-## Getting Started
+## Ne yapar?
 
-This project is a starting point for a Flutter application.
+- Ana ekranda ürün listesi (kart görünümü)
+- Ürün detay sayfası
+- Sepet ekranı
+- Veriler `https://wantapi.com/products.php` adresinden (`http` paketi ile) alınır
 
-A few resources to get you started if this is your first Flutter project:
+## Gereksinimler
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (projede tanımlı Dart SDK sürümüne uygun)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Çalıştırma
+
+```bash
+flutter pub get
+flutter run
+```
+
+Android, iOS, web veya masaüstü hedeflerinden birini seçerek çalıştırabilirsiniz.
+
+## Proje yapısı (özet)
+
+| Klasör / dosya | Açıklama |
+|----------------|----------|
+| `lib/main.dart` | Uygulama girişi ve tema |
+| `lib/views/` | Ana ekran, ürün detayı, sepet |
+| `lib/services/api_service.dart` | API istekleri |
+| `lib/models/` | Ürün veri modelleri |
+| `lib/components/` | Ortak bileşenler (ör. ürün kartı) |
+
+---
+
