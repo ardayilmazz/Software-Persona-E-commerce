@@ -1,36 +1,24 @@
 # Flutter Ürün Uygulaması
 
-Ürünleri bir API üzerinden listeleyen, detay sayfası ve sepet ekranı sunan basit bir **Flutter** mobil uygulaması.
+▪ **Proje adı:** Flutter Ürün Uygulaması (`flutter_application_1`)
 
-## Ne yapar?
+▪ **Kısa açıklama:** Ürünleri bir API üzerinden listeleyen, detay ve sepet ekranları sunan Flutter mobil uygulaması. Veriler `https://wantapi.com/products.php` adresinden alınır. Uygulama içerisinde 3 farklı sayfa bulunmaktadır. Bunlar; ana sayfa, ürün listesi, ürün detayı ekran yapısı. Navigator yapısı kullanılarak ekran geçişleri ayarlanmıştır. Ayrıca Route argument ve gridview yapıları da proje içerisinde kullanılmıştır.
 
-- Ana ekranda ürün listesi (kart görünümü)
-- Ürün detay sayfası
-- Sepet ekranı
-- Veriler `https://wantapi.com/products.php` adresinden (`http` paketi ile) alınır
+▪ **Kullanılan Flutter sürümü:** Bu makinede doğrulanan ortam: Flutter **3.41.6** (stable), Dart **3.11.4**. `pubspec.yaml` içinde Dart SDK alt sınırı: `^3.11.4`. Farklı bir Flutter kurulumu kullanıyorsanız, en az bu Dart sürümüyle uyumlu bir Flutter sürümü tercih edin.
 
-## Gereksinimler
+▪ **Çalıştırma adımları:**
 
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) (projede tanımlı Dart SDK sürümüne uygun)
+1. Proje klasöründe terminal açın.
+2. Bağımlılıkları yükleyin:
 
-## Çalıştırma
+   ```bash
+   flutter pub get
+   ```
 
-```bash
-flutter pub get
-flutter run
-```
+3. Bağlı bir cihaz veya emülatör seçip uygulamayı çalıştırın:
 
-Android, iOS, web veya masaüstü hedeflerinden birini seçerek çalıştırabilirsiniz.
+   ```bash
+   flutter run
+   ```
 
-## Proje yapısı (özet)
-
-| Klasör / dosya | Açıklama |
-|----------------|----------|
-| `lib/main.dart` | Uygulama girişi ve tema |
-| `lib/views/` | Ana ekran, ürün detayı, sepet |
-| `lib/services/api_service.dart` | API istekleri |
-| `lib/models/` | Ürün veri modelleri |
-| `lib/components/` | Ortak bileşenler (ör. ürün kartı) |
-
----
-
+   Gerekirse hedefi belirtin, örneğin: `flutter run -d chrome` (web) veya `flutter devices` ile cihaz listesine bakın.
